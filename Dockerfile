@@ -1,8 +1,5 @@
 FROM rust:latest
 
-# Install dependencies
-RUN apt-get update && apt-get install -y git nohup
-
 # Clone the Stargate repository
 RUN git clone https://github.com/sinqual/stargate /stargate
 
